@@ -6,3 +6,7 @@
 4. 连接redis数据库
 5. 注册路由
 6. 启动server
+
+---
+## 学习参考
+[基于gin实现一个简单的web server](https://juejin.cn/post/7033793209360711716)
