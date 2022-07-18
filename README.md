@@ -20,5 +20,27 @@
 - [ ] 初始化日志库
 - [ ] 连接mysql、redis
 - [ ] 注册路由
+- [ ] 集成swagger
 - [ ] 表单校验
 - [ ] crud
+
+## use in docker
+
+### build
+
+```bash
+docker build --tag gin-study .
+```
+
+### run
+
+```bash
+docker run -p 3000:3000 gin-study
+```
+
+### test
+
+```bash
+curl http://localhost:3000/ping
+{"message":"pong"}%
+```

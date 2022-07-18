@@ -1,14 +1,19 @@
 package main
 
 import (
-	"fmt"
 	"gin-study/setting"
+
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
 	setting.Init()
-	fmt.Printf("%+v\n", setting.Config)
-	fmt.Printf("%+v\n", setting.Config.LogConfig)
-	fmt.Printf("%+v\n", setting.Config.MysqlConfig)
-	fmt.Printf("%+v\n", setting.Config.RedisConfig)
+
+	r := gin.Default()
+	r.GET("/ping", func(ctx *gin.Context) {
+		ctx.JSON(200, gin.H{
+			"message": "pong",
+		})
+	})
+	r.Run(":3000")
 }
