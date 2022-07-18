@@ -11,7 +11,8 @@
 
 ## 学习参考
 
-[基于gin实现一个简单的web server](https://juejin.cn/post/7033793209360711716)
+- [基于gin实现一个简单的web server](https://juejin.cn/post/7033793209360711716)
+- [构建你的docker镜像](https://docs.docker.com/language/golang/build-images/)
 
 ## TODO
 
